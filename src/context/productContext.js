@@ -31,7 +31,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
         //console.log(products);
     };
 
-    const getSingleProduct = async () => {
+    const getSingleProduct = async (url) => {
         
         dispatch({ type : "SET_SINGLE_LOADING"});
 
