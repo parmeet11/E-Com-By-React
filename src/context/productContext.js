@@ -28,7 +28,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
         } catch(error){
             dispatch({type: "API_ERROR"});
         } 
-        //console.log(products);
+       
     };
 
     const getSingleProduct = async (url) => {
