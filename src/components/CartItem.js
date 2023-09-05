@@ -8,14 +8,14 @@ import { useCartContext } from "../context/cartContext";
 const CartItem = (curElem) => {
  const {id, name, image, color, price, amount} = curElem;
  // console.log(curElem);
-  const { removeItem } = useCartContext();
-    const setDecrease = () => {
+  const { removeItem, setDecrease, setIncrease } = useCartContext();
+    //const setDecrease = () => {
         // amount > 1 ? setAmount(amount - 1) : setAmount(1);
-      };
+     // };
     
-      const setIncrease = () => {
+      //const setIncrease = () => {
         // amount < stock ? setAmount(amount + 1) : setAmount(stock);
-      };
+      //};
     
       return (
         <div className="cart_heading grid grid-five-column">
@@ -45,8 +45,8 @@ const CartItem = (curElem) => {
           {/* Quantity  */}
           <CartAmountToggle
             amount={amount}
-            setDecrease={setDecrease}
-            setIncrease={setIncrease}
+            setDecrease={() => setDecrease(id)}
+            setIncrease={() => setIncrease(id)}
           />
     
           {/* //Subtotal */}
