@@ -8,7 +8,7 @@ import { Button } from "../styles/Button";
 const FilterSection = () => {
 
   const {
-    filters: { text, category, color, price, maxPrice, minPrice },
+    filters: { text, color, price, maxPrice, minPrice },
     all_products,
     updateFilterValue,
     clearFilters,

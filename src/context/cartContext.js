@@ -45,6 +45,7 @@ const removeItem = (id) => {
 
     dispatch({ type: "CART_TOTAL_ITEM" });
     dispatch({ type: "CART_TOTAL_PRICE" });
+    //dispatch({ type: "CART_ITEM_PRICE_TOTAL" });
     localStorage.setItem("KeyCart", JSON.stringify(state.cart));
   }, [state.cart]);
 
